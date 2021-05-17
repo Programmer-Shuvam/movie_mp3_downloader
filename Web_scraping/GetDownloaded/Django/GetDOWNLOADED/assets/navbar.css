@@ -1,0 +1,135 @@
+body > nav
+{
+	background: linear-gradient(235deg,#041067, #010615, #320669);
+	border-bottom: 4px solid #7fff00;
+	margin-bottom: 32px;
+	transition: all 0.4s ease;
+	position: fixed;
+	top: 0;
+
+}
+a.navbar-brand
+{
+	color: #D4AF37;
+	font-size: 27px;
+	line-height: 60px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 800;
+}
+.navbar-nav
+{
+	padding-left: 2em;
+}
+body > nav ul li a
+{
+	color: #D2691E;
+	font-size:15px;
+	padding: 10px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bolder;
+	border-radius: 3px;
+}
+body > nav ul li
+{
+	text-align: center;
+}
+
+nav input
+{
+	text-align: center;
+	width: 100%;
+	border: 1px solid #27F08F;
+	border-radius: 55px;
+}
+.form-control
+{
+	text-align: center;
+	border: 1px solid #ce0000;
+	border-radius: 50px;
+}
+.navbar-nav .active>a
+{
+	color: #01e5def1;
+	border-bottom: 2px solid #AB0303 !important;
+	border-top: 2px solid #AB0303 !important;
+}
+.navbar-collapse a:hover
+{
+	color: #04e5def1;
+	border-bottom: 2px solid #D2691E !important;
+	border-top: 2px solid #D2691E !important;
+	transition: all .3s cubic-bezier(.22,.43,.35,1.5);
+}
+
+footer
+{
+	background-color: #010615;
+	color: #D4AF37;
+	margin-top: 2em;
+	border-top: 2px solid #D4AF37;
+	height: 40px;
+	left: 0;
+    bottom: 0px;
+	width: 100%;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bolder;
+	padding-top: 7px;
+	text-align: left;	
+}
+footer img
+{
+	height: 30px;
+	margin-left: 17px;
+	padding-bottom: 6px;
+}
+a[class="navbar-brand"]:hover{color:#11E8EB;}
+
+.button span{
+    height: 3px;
+    width: 100%;
+    background: #11E8EB;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(.62,.43,.35,1.47);
+}
+
+#check{
+    display: none;
+    margin-bottom: 6px;
+}
+/* toggle icon animation */
+.button span{
+    height: 3px;
+    width: 100%;
+    background: #D4AF37;
+    display: inline-block;
+    border-radius: 25%;
+    transition: all 0.5s cubic-bezier(.62,.43,.35,1.47);
+}
+.button{
+    width: 50px;
+    height: 48px;
+    padding: 14px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    padding-top: 8px;
+    line-height: 8px;
+    text-align: left;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 201;
+}
+/* toggle icon animation */
+#check:checked ~ .button span:nth-child(1){
+    width: 100%;
+    transform: rotate(45deg) translateY(7px) translateX(7px);
+}
+#check:checked ~ .button span:nth-child(2){
+    width: 0;
+}
+
+#check:checked ~ .button span:nth-child(3){
+    width: 100%;
+    transform: rotate(-45deg) translateY(-7px) translateX(7px);
+}

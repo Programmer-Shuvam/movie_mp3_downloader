@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="countdown.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js" integrity="sha512-JO6JyFPJupQKZf7icgZkHwuq/rAQxH7COqvEd4WdK52AtHPedwHog05T69pIelI69jVN/zZbW6TuHfH2mS8j/Q==" crossorigin="anonymous"></script>
+	<script src="countdown.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+</head>
+<body>
+<svg id="projectionScreen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">	
+	<defs>
+	  	<radialgradient id="filmGradient" cx="600" cy="450" r="340" gradientUnits="userSpaceOnUse">
+	    	<stop offset="0" stop-color="#e6e6e6"/>
+	    	<stop offset="0.1" stop-color="#d1d1d1"/>
+		    <stop offset="1" stop-color="#1a1a1a"/>
+	  	</radialgradient>
+	  
+	  	<mask id="filmMask">
+			<circle class="big" cx="600" cy="450" transform="rotate(-90 600 450)" r="250" stroke="#fff" stroke-width="500" fill="none" />
+	  	</mask>
+	  
+	  	<mask id="sockMask">
+			<rect x="490" y="285.13" width="260" height="260" fill="#fff"/>
+	  	</mask>
+	  
+	  	<mask id="textMask">
+			<rect x="213" y="585" width="774" height="130" fill="#fff"/>
+	  	</mask>
+	
+	
+	</defs>
+</svg>	
+</body>
+</html>	

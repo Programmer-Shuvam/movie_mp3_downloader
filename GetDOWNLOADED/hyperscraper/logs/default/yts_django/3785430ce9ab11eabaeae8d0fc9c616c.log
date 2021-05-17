@@ -1,0 +1,449 @@
+2020-08-29 09:23:40 [scrapy.utils.log] INFO: Scrapy 2.3.0 started (bot: hyperscraper)
+2020-08-29 09:23:40 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.18362-SP0
+2020-08-29 09:23:40 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-08-29 09:23:40 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'hyperscraper',
+ 'CONCURRENT_REQUESTS': 7,
+ 'LOG_FILE': 'logs\\default\\yts_django\\3785430ce9ab11eabaeae8d0fc9c616c.log',
+ 'NEWSPIDER_MODULE': 'hyperscraper.spiders',
+ 'SPIDER_MODULES': ['hyperscraper.spiders']}
+2020-08-29 09:23:40 [scrapy.extensions.telnet] INFO: Telnet Password: ae8e11fd12114361
+2020-08-29 09:23:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-08-29 09:23:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2020-08-29 09:23:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-08-29 09:23:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 09:23:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 09:23:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 09:23:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2020-08-29 09:23:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 09:23:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2020-08-29 09:23:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-08-29 09:23:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-08-29 09:23:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['hyperscraper.pipelines.HyperscraperPipeline']
+2020-08-29 09:23:45 [scrapy.core.engine] INFO: Spider opened
+2020-08-29 09:23:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-08-29 09:23:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-08-29 09:23:45 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+2020-08-29 09:23:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all> (referer: None)
+2020-08-29 09:23:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+2020-08-29 09:23:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+2020-08-29 09:23:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; chromeframe/32.0.1700.107; GTB7.5; .NET CLR 1.1.4322; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; WinNT-EVI 12.01.2010; MS-RTC LM 8; .NET CLR 2.0.50727; lib/5.0\0195; Engine/4.00195; 89670803)
+2020-08-29 09:23:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.112 Safari/535.1
+2020-08-29 09:23:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36
+2020-08-29 09:23:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+2020-08-29 09:23:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+2020-08-29 09:23:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/avengers-confidential-black-widow-punisher-2014> (referer: https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all)
+2020-08-29 09:23:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/avengers-confidential-black-widow-punisher-2014>
+{'cover': 'https://img.yts.mx/assets/images/movies/avengers_confidential_black_widow_punisher_2014/medium-cover.jpg',
+ 'desc': ' After interfering with a top secret mission, THE PUNISHER is taken '
+         'into custody by S.H.I.E.L.D. AGENT and AVENGER, BLACK WIDOW. At the '
+         'orders of Director Nick Fury, Punisher and Black Widow are sent on a '
+         'mission to stop LEVIATHAN, a global terrorist organization, that '
+         'plans to sell stolen S.H.I.E.L.D. technology to the highest bidder. '
+         'Now, the vigilante and spy must work together to prevent this '
+         'technology from falling into the wrong hands. The fate of the world, '
+         'and of the AVENGERS, hangs in the balance. ',
+ 'duration': ' 1 hr 22 min ',
+ 'imdb': 5.8,
+ 'links': '{\n'
+          '    "720p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/C734435990BFD0614495F11B674F6291A4C48F69",\n'
+          '        " 759.43 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:C734435990BFD0614495F11B674F6291A4C48F69&dn=Avengers+Confidential%3A+Black+Widow+%26+Punisher+%282014%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/353D484AFC543C48721643AE9B58D52352B43A6E",\n'
+          '        " 1.52 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:353D484AFC543C48721643AE9B58D52352B43A6E&dn=Avengers+Confidential%3A+Black+Widow+%26+Punisher+%282014%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': ' Avengers Confidential: Black Widow & Punisher',
+ 'rel_date': datetime.date(2014, 4, 7),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/avengers_confidential_black_widow_punisher_2014/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/avengers_confidential_black_widow_punisher_2014/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/avengers_confidential_black_widow_punisher_2014/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 09:23:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/ultimate-avengers-the-movie-2006> (referer: https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all)
+2020-08-29 09:23:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/avengers-grimm-time-wars-2018> (referer: https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all)
+2020-08-29 09:23:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/the-avengers-1998> (referer: https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all)
+2020-08-29 09:23:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/ultimate-avengers-ii-2006> (referer: https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all)
+2020-08-29 09:23:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/avengers-endgame-2019> (referer: https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all)
+2020-08-29 09:23:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/avengers-infinity-war-2018> (referer: https://yts.mx/browse-movies/avengers/all/all/0/latest/0/all)
+2020-08-29 09:23:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/avengers-grimm-time-wars-2018>
+{'cover': 'https://img.yts.mx/assets/images/movies/avengers_grimm_time_wars_2018/medium-cover.jpg',
+ 'desc': ' When Rumpelstiltskin tries to take over Earth once and for all, The '
+         'Avengers Grimm must track him down through time in order to defeat '
+         'him. ',
+ 'duration': ' 1 hr 28 min ',
+ 'imdb': 2.4,
+ 'links': '{\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/4AA94D343229166E9808FCEE3CD1F97F6181D378",\n'
+          '        " 747.14 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:4AA94D343229166E9808FCEE3CD1F97F6181D378&dn=Avengers+Grimm%3A+Time+Wars+%282018%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/3AB883C86273E01909A899BC5C32FAB19D8ECF9E",\n'
+          '        " 1.4 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:3AB883C86273E01909A899BC5C32FAB19D8ECF9E&dn=Avengers+Grimm%3A+Time+Wars+%282018%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/9242AE0794C0AE595BCCE0EED3005B5B7968C60F",\n'
+          '        " 748 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:9242AE0794C0AE595BCCE0EED3005B5B7968C60F&dn=Avengers+Grimm%3A+Time+Wars+%282018%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/14B7B937A087FF46B2A8E64DA2FD94A8A7B572B8",\n'
+          '        " 1.4 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:14B7B937A087FF46B2A8E64DA2FD94A8A7B572B8&dn=Avengers+Grimm%3A+Time+Wars+%282018%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Avengers Grimm: Time Wars',
+ 'rel_date': datetime.date(2018, 7, 17),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/avengers_grimm_time_wars_2018/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/avengers_grimm_time_wars_2018/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/avengers_grimm_time_wars_2018/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 09:23:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/ultimate-avengers-the-movie-2006>
+{'cover': 'https://img.yts.mx/assets/images/movies/ultimate_avengers_2006/medium-cover.jpg',
+ 'desc': ' In 1945, Captain America, U.S. soldier created with a Super-Soldier '
+         'Serum, is fighting the Nazis during World War II, and after averting '
+         'a nuclear disaster, he falls into the icy waters of the North '
+         'Atlantic, and frozen in suspended animation, only to be revived in '
+         'the twenty-first century by the American military, who are hoping '
+         "that they can recreate the serum in Captain America's blood in order "
+         'to create more super-soldiers. But now, with the world facing the '
+         'very same evil, Captain America must rise again as our last hope of '
+         "survival, and lead a strong-willed team of today's superheroes. ",
+ 'duration': ' 1 hr 12 min ',
+ 'imdb': 6.7,
+ 'links': '{\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/E1D487EE85337121563B0038FFA8CCDE71D30D8F",\n'
+          '        " 613.76 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:E1D487EE85337121563B0038FFA8CCDE71D30D8F&dn=Ultimate+Avengers%3A+The+Movie+%282006%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/9D98222D32ADE91116856B9053E166FE11EAC8AB",\n'
+          '        " 1.15 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:9D98222D32ADE91116856B9053E166FE11EAC8AB&dn=Ultimate+Avengers%3A+The+Movie+%282006%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Ultimate Avengers: The Movie',
+ 'rel_date': datetime.date(2006, 4, 18),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/ultimate_avengers_2006/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/ultimate_avengers_2006/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/ultimate_avengers_2006/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 09:23:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/the-avengers-1998>
+{'cover': 'https://img.yts.mx/assets/images/movies/The_Avengers_1998/medium-cover.jpg',
+ 'desc': ' British Ministry Agent John Steed, under direction from "Mother", '
+         'investigates a diabolical plot by archvillain Sir August de Wynter '
+         'to rule the world with his weather control machine. Steed '
+         'investigates the beautiful Doctor Mrs. Emma Peel, the only suspect, '
+         'but simultaneously falls for her and joins forces with her to combat '
+         'Sir August. ',
+ 'duration': ' 1 hr 29 min ',
+ 'imdb': 3.8,
+ 'links': '{\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/3EE316EA138ADD1FB136FE00668C5113283ACAB0",\n'
+          '        " 699.73 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:3EE316EA138ADD1FB136FE00668C5113283ACAB0&dn=The+Avengers+%281998%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/26036FC18C34D74AD31E3879AF3A575F0C8A511B",\n'
+          '        " 1.24 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:26036FC18C34D74AD31E3879AF3A575F0C8A511B&dn=The+Avengers+%281998%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'The Avengers',
+ 'rel_date': datetime.date(1998, 8, 18),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/The_Avengers_1998/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/The_Avengers_1998/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/The_Avengers_1998/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 09:23:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/ultimate-avengers-ii-2006>
+{'cover': 'https://img.yts.mx/assets/images/movies/ultimate_avengers_ii_2006/medium-cover.jpg',
+ 'desc': ' The mightiest of heroes the ultimate Avengers must continue their '
+         'war against the same aliens they fought. This time, the aliens and '
+         "Captain America's old enemy Herr Kleiser (the alien shape shifter "
+         'who supposedly died in 1945), are invading a hidden city in Africa, '
+         'where the Black Panther is king. But when Kleiser murders the Black '
+         "Panther's father T'Chaka, Black Panther travels to the U.S.A. to get "
+         'advice from Captain America. The Avengers must travel to Africa, '
+         'where a bloody war will be waged against the invading aliens. ',
+ 'duration': ' 1 hr 13 min ',
+ 'imdb': 6.6,
+ 'links': '{\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/60037FB21F9872B2EAD6E506B1F10B0CAB8FFC50",\n'
+          '        " 630.39 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:60037FB21F9872B2EAD6E506B1F10B0CAB8FFC50&dn=Ultimate+Avengers+II+%282006%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/6918AF54D13A05E41D8BAFA311A8CA6126866929",\n'
+          '        " 1.17 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:6918AF54D13A05E41D8BAFA311A8CA6126866929&dn=Ultimate+Avengers+II+%282006%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Ultimate Avengers II',
+ 'rel_date': datetime.date(2006, 4, 19),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/ultimate_avengers_ii_2006/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/ultimate_avengers_ii_2006/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/ultimate_avengers_ii_2006/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 09:23:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/avengers-endgame-2019>
+{'cover': 'https://img.yts.mx/assets/images/movies/avengers_endgame_2019/medium-cover.jpg',
+ 'desc': ' After the devastating events of Avengers: Infinity War (2018), the '
+         'universe is in ruins due to the efforts of the Mad Titan, Thanos. '
+         'With the help of remaining allies, the Avengers must assemble once '
+         "more in order to undo Thanos's actions and undo the chaos to the "
+         'universe, no matter what consequences may be in store, and no matter '
+         'who they face... ',
+ 'duration': ' 3 hr 1 min ',
+ 'imdb': 8.4,
+ 'links': '{\n'
+          '    "3D.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/134F7AF967DBDB585A934A24C9F2A2EEE72E2A93",\n'
+          '        " 2.84 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:134F7AF967DBDB585A934A24C9F2A2EEE72E2A93&dn=Avengers%3A+Endgame+%282019%29+%5B3D%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/5A4140BD59D66BCAC57CF05AF4A8FAB4EBCAE1C1",\n'
+          '        " 1.43 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:5A4140BD59D66BCAC57CF05AF4A8FAB4EBCAE1C1&dn=Avengers%3A+Endgame+%282019%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/223F7484D326AD8EFD3CF1E548DED524833CB77E",\n'
+          '        " 3.01 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:223F7484D326AD8EFD3CF1E548DED524833CB77E&dn=Avengers%3A+Endgame+%282019%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "2160p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/709FBD48374D2AE13C11B07A26B5E7DDC727D720",\n'
+          '        " 5.26 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:709FBD48374D2AE13C11B07A26B5E7DDC727D720&dn=Avengers%3A+Endgame+%282019%29+%5B2160p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/9D62160EEE330397A7A7BABA989A269C58CCFD8E",\n'
+          '        " 1.43 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:9D62160EEE330397A7A7BABA989A269C58CCFD8E&dn=Avengers%3A+Endgame+%282019%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/414A6F933C48FC7543A9CDB42C854B5457C5BCC7",\n'
+          '        " 3 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:414A6F933C48FC7543A9CDB42C854B5457C5BCC7&dn=Avengers%3A+Endgame+%282019%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Avengers: Endgame',
+ 'rel_date': datetime.date(2019, 2, 9),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/avengers_endgame_2019/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/avengers_endgame_2019/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/avengers_endgame_2019/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 09:23:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/avengers-infinity-war-2018>
+{'cover': 'https://img.yts.mx/assets/images/movies/avengers_infinity_war_2018/medium-cover.jpg',
+ 'desc': ' As the Avengers and their allies have continued to protect the '
+         'world from threats too large for any one hero to handle, a new '
+         'danger has emerged from the cosmic shadows: Thanos. A despot of '
+         'intergalactic infamy, his goal is to collect all six Infinity '
+         'Stones, artifacts of unimaginable power, and use them to inflict his '
+         'twisted will on all of reality. Everything the Avengers have fought '
+         'for has led up to this moment, the fate of Earth and existence has '
+         'never been more uncertain. ',
+ 'duration': ' 2 hr 29 min ',
+ 'imdb': 8.4,
+ 'links': '{\n'
+          '    "3D.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/16B087DFF9C8153072BD35C1BEC245CB831AEF4D",\n'
+          '        " 2.39 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:16B087DFF9C8153072BD35C1BEC245CB831AEF4D&dn=Avengers%3A+Infinity+War+%282018%29+%5B3D%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/EA17E6BE92962A403AC1C638D2537DCF1E564D26",\n'
+          '        " 1.25 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:EA17E6BE92962A403AC1C638D2537DCF1E564D26&dn=Avengers%3A+Infinity+War+%282018%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/866BDCFA006930A718ADBC21D8CAE1F2C7F9D8B3",\n'
+          '        " 2.39 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:866BDCFA006930A718ADBC21D8CAE1F2C7F9D8B3&dn=Avengers%3A+Infinity+War+%282018%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "2160p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/F99044B231A20F0825E4163B31AF3BA7A7AD3464",\n'
+          '        " 7.32 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:F99044B231A20F0825E4163B31AF3BA7A7AD3464&dn=Avengers%3A+Infinity+War+%282018%29+%5B2160p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/BCEB706EA32EDD855FCA4426DF8A7831F53CC3EE",\n'
+          '        " 1.24 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:BCEB706EA32EDD855FCA4426DF8A7831F53CC3EE&dn=Avengers%3A+Infinity+War+%282018%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/7643D0625DED0A5FC967B37A9D6AF6990236C180",\n'
+          '        " 2.39 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:7643D0625DED0A5FC967B37A9D6AF6990236C180&dn=Avengers%3A+Infinity+War+%282018%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Avengers: Infinity War',
+ 'rel_date': datetime.date(2018, 2, 10),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/avengers_infinity_war_2018/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/avengers_infinity_war_2018/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/avengers_infinity_war_2018/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 09:23:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-08-29 09:23:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3901,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 85571,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 8,
+ 'elapsed_time_seconds': 2.83862,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 29, 3, 53, 48, 275064),
+ 'item_scraped_count': 7,
+ 'log_count/DEBUG': 23,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 45,
+ 'request_depth_max': 1,
+ 'response_received_count': 8,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2020, 8, 29, 3, 53, 45, 436444)}
+2020-08-29 09:23:48 [scrapy.core.engine] INFO: Spider closed (finished)

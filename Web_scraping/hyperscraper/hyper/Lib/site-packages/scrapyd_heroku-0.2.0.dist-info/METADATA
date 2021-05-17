@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: scrapyd-heroku
+Version: 0.2.0
+Summary: Wrapper for running Scrapyd in Heroku or locally as a service
+Home-page: https://github.com/jxltom/scrapyd-heroku
+Author: jxltom
+Author-email: jxltom@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: scrapyd
+
+
+# scrapyd-heroku
+
+Wrapper for running [Scrapyd](https://github.com/scrapy/scrapyd) in [Heroku](https://heroku.com/) or locally as a service
+
+## Features
+
+- Support running Scrapyd service in Heroku
+- Support running Scrapyd service locally
+- Support latest version of Scrapy ```1.5.0``` and Scrapyd ```1.2.0```
+
+## Getting Started
+
+- Simply [fork this repository](https://github.com/jxltom/scrapyd-heroku/fork), update custom configurations in ```scrapy.conf```, and deploy it to Heroku
+
+- Or [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jxltom/scrapyd-heroku) from this repo directly
+
+- Or ```pip install scrapyd-heroku``` and run ```scrapyd-heroku``` locally
+
+

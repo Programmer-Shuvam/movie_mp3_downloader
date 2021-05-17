@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>GetDOWNLOADED</title>
+    <meta charset="utf-8">
+    <link rel='icon' href='{% static "favicon.png" %}' type='image/x-icon'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'navbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cards.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&family=Comfortaa&family=Exo+2&family=Ubuntu&display=swap&family=Lora:wght@500&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg col-12 col-sm-12">
+        <a class="navbar-brand col-lg-3 col-8" href='{% url "index" %}'>GetDOWNLOADED</a>
+        <div class="navbar-toggler col-2">
+            <input data-toggle="collapse" data-target="#navbarSupportedContent" type="checkbox" id="check">
+            <label for="check" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href='{% url "index" %}'>Recents<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href='{% url "bollywood" %}'>Bollywood<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href='{% url "hollywood" %}'>Hollywood<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href='{% url "pcgames" %}'>PC Games<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href='{% url "music" %}'>Music<span class="sr-only"></span></a></li>
+           </ul>
+        </div>
+        <form method="POST" action="/search/" class="form-inline my-2 justify-content-center my-lg-0 col-lg-3">
+            {% csrf_token %}
+            <input class="form-control col-sm-12" type="search" placeholder="Super Search" aria-label="Search" name="srh">
+        </form>
+    </nav>
+    <div>
+    {% if messages %}
+        <ul class = "messages">
+            {% for k in messages %}
+            <h1><ul style="color:red">{{ k }}</ul></h1>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+    {% if sr %}
+    {% for iter in sr %}
+    {% for data in iter %}
+    <div class="col-12 col-lg-4 col-xl-3 col-md-6">
+        <div class="boxs">
+            <div class="card">
+                <label for="card{{forloop.counter}}"  class="d-block w-100 h-100">
+                    <input type="checkbox" id="card{{forloop.counter}}" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('{{data.cover}}')" width='180'>
+                            <div class="caption text-center"><h5>{{data.name}}</h5></div>
+                        </div>
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item active"><a class="nav-link show" href="#bio{{forloop.counter}}" role="tab" data-toggle="tab">Bio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#album{{forloop.counter}}" role="tab" data-toggle="tab">Screenshot</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#songs{{forloop.counter}}" role="tab" data-toggle="tab">Download</a></li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio{{forloop.counter}}">
+                                    <div class="bio">
+                                        <h2 id="bio_title">{{data.name}}</h2>
+                                        <p id="bio_description">{{data.desc}}</p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album{{forloop.counter}}">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <div><img class="" src={{data.screenshot1}} width="80"/></div>
+                                            </div>
+                                            <div class="col">
+                                                <div><img class="" src={{data.screenshot2}} width="80"/></div>
+                                            </div>
+                                            <div class="col">
+                                                <div><img class="" src={{data.screenshot3}} width="80"/></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs{{forloop.counter}}">
+                                    <div class="songs">
+                                        <div class="col">
+                                            <p>Torrent File : <a class="btn btn-outline-dark" href="{{data.torrent}}" id="but"><img id="but" height="30" width="30" src="{% static 'File_icon_burned.png' %}" ></a></p>
+                                            <p>Magnet : <a class="btn btn-outline-dark" href={{data.magnet}} id="but"><img id="but" height="30" width="30" src="{% static 'Magnet.png' %}" ></a></p>
+                                            <p>Direct Download : <a class="btn btn-outline-dark" href={{data.direct}} id="but"><img id="but" height="30" width="30" src="{% static 'images_burned.png' %}" ></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+    {% endif %}
+    <footer>
+        <ul>
+            <h4>Contact Us: <a href="tel:7978678256"><img src="{% static 'call.png' %}"></a>
+                <a href="https://www.instagram.com/programmer_shuvam/?igshid=1p46e6pgpzylp"><img src="{% static 'insta.png' %}"></a>
+                <a href="mailto:thedevelopers512@gmail.com"><img src="{% static 'mail.png' %}"></a>
+            </h4>
+        </ul>
+    </footer>
+</body>
+<script>
+    $('div[class="back"] li > a').on('click', function () {
+        $(this).parent().parent().children().removeClass();
+        $(this).parent().parent().children().addClass('nav-item');
+        $(this).parent().addClass('active');
+    });
+</script>
+</html>

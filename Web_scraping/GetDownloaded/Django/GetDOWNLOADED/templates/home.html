@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>GetDOWNLOADED</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'navbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cards.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&family=Comfortaa&family=Exo+2&family=Ubuntu&display=swap&family=Lora:wght@500&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg col-12 col-sm-12">
+        <a class="navbar-brand col-lg-3 col-8" href="home.html">GetDOWNLOADED</a>
+        <div class="navbar-toggler col-2">
+            <input data-toggle="collapse" data-target="#navbarSupportedContent" type="checkbox" id="check">
+            <label for="check" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>    
+        <!-- </a>  -->
+        <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="home.html">Recents<span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="bollywood.html">Bollywood<span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="hollywood.html">Hollywood<span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pcgames.html">PC Games<span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="music.html">Music<span class="sr-only"></span></a></li>
+          </ul>
+        </div>
+        <form action="search" class="form-inline my-2 justify-content-center my-lg-0 col-lg-3" method="GET"><input class="form-control col-sm-12" type="search" placeholder="Super Search" aria-label="Search" name="search"></form>
+    </nav>
+    <!-- box -->
+    <div class="col-12 col-lg-4 col-xl-3 col-md-6">
+        <div class="boxs">        
+            <div class="card">
+                <label for="card1"  class="d-block w-100 h-100">
+                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('https://wallpapercave.com/wp/wp3891762.jpg')" width='180'>
+                            <div class="caption text-center"><h5>Avengers : Endgame</h5></div>
+                            
+                        </div>
+
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link show" href="#bio1" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album1" role="tab" data-toggle="tab">Screenshot</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs1" role="tab" data-toggle="tab">Download</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio1">
+                                    <div class="bio">
+                                        <h3 id="bio_title">IMAGINE DRAGONS</h3>
+                                        <p id="bio_description">
+                                            Imagine Dragons is an alternative-rock band from Las Vegas, Nevada. Band members include frontman Dan Reynolds, bassist Ben McKee, guitarist Wayne Sermon, and drummer Daniel Platzman.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album1">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs1">
+                                    <div class="songs">
+                                        <div class="col">
+                                            <p>Torrent File : <button class="btn btn-outline-dark" id="but"><img id="but" height="30" width="30" src="File_icon_burned.png" alt="https://www.iconspng.com/images/crystal-download-icon/crystal-download-icon.jpg"></button>
+                                            </p>
+                                                 
+                                            <p>Magnet : <button class="btn btn-outline-dark" id="but"><img id="but" height="30" width="30" src="Magnet.png" alt="https://www.pngitem.com/pimgs/m/485-4853144_magnet-png-image-u-magnet-clipart-transparent-png.png"></button>
+                                            </p>
+
+                                            <p>Direct Download : <button class="btn btn-outline-dark" id="but"><img id="but" height="30" width="30" src="images_burned.png" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSI0d4Uafk8cvjH43ypuUn5f85JLyOUfsc3j08s1ZiJNChjDdtL&usqp=CAU"></button>
+                                            </p> 
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!--box ends-->
+    <footer>
+        <ul>
+            <h5>Contact Us: <a href="tel:7978678256"><img src="{% static 'call.png' %}"></a>
+                <a href="https://www.instagram.com/programmer_shuvam/?igshid=1p46e6pgpzylp"><img src="{% static 'insta.png' %}"></a>
+                <a href="https://alltimeentertainer2003@gmail.com"><img src="{% static 'mail.png' %}"></a>
+            </h5>
+        </ul>
+    </footer>
+</body>
+<script>
+    $('div[class="back"] li > a').on('click', function () {
+        $(this).parent().parent().children().removeClass();
+        $(this).parent().parent().children().addClass('nav-item');
+        $(this).parent().addClass('active');
+    });
+</script>
+</html>

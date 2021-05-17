@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Downloaded</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="cards.css">
+</head>
+<body>
+   <!--  
+    ###########     define navbar here        #############33
+ -->
+
+ 
+    <!-- ##########     define for loop here    ############### -->
+    <!-- change the n where ever it is written -->
+    <!-- box n --> 
+    <div class="col-12 col-lg-3 col-md-6">
+        <div class="boxs">        
+            <div class="card">
+                <!-- change card + n -->
+                <label for="card+'n'"  class="d-block w-100 h-100">
+                    <!-- change card + n -->
+                    <input type="checkbox" id="card+'n'" class="more" aria-hidden="true">
+                    <div class="content">
+                        <!-- ########  background image here  ########### -->
+                        <div class="front" style="background-image: url('https://wallpapercave.com/wp/wp3891762.jpg')" width='180'>
+                            <div class="caption text-center">
+                                <!-- #######  Movie Name ####### -->
+                                <h5>Avengers : Endgame</h5>
+                            </div>
+                            
+                        </div>
+
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <!-- change nav link + n -->
+                                <li class="nav-item jack active">
+                                    <a class="nav-link   show" href="#bio+'n'" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item jack">
+                                    <a class="nav-link" href="#album+'n'" role="tab" data-toggle="tab">Screenshot</a>
+                                </li>
+                                <li class="nav-item jack">
+                                    <a class="nav-link" href="#songs+'n'" role="tab" data-toggle="tab">Download</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio+'n'">
+                                    <div class="bio">
+                                        <!-- #######  Movie Name ####### -->
+                                        <h3 id="bio_title">IMAGINE DRAGONS</h3>
+                                        <!-- #######  Movie Description ####### -->
+                                        <span id="bio_description">
+                                            Imagine Dragons is an alternative-rock band from Las Vegas, Nevada. Band members include frontman Dan Reynolds, bassist Ben McKee, guitarist Wayne Sermon, and drummer Daniel Platzman.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album+'n'">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <!-- ####   list screenshot with loop   #### -->
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs+'n'">
+                                    <div class="songs">
+                                        <div class="">
+                                            <div class="col">
+                                                <ol class="list-group list-group-flush list-unstyled">
+                                                    <li class="list-group-item">
+                                                        <!-- ## define torrent link  ## -->
+                                                        <p>Torrent File : <button href="" class="btn btn-outline-dark" id="but"><img id="but" height="30" width="30" src="File_icon_burned.png" alt="https://www.iconspng.com/images/crystal-download-icon/crystal-download-icon.jpg"></button></p>
+                                                        
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <!-- ## define magnet ## -->
+                                                        <p>Magnet : <button href="" class="btn btn-outline-dark" id="but"><img id="but" height="30" width="30" src="Magnet.png" alt="https://www.pngitem.com/pimgs/m/485-4853144_magnet-png-image-u-magnet-clipart-transparent-png.png"></button></p>
+                                                        
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <!-- ## direct download link ##  -->
+                                                        <p>Direct Download : <button href="" class="btn btn-outline-dark" id="but"><img id="but" height="30" width="30" src="images_burned.png" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSI0d4Uafk8cvjH43ypuUn5f85JLyOUfsc3j08s1ZiJNChjDdtL&usqp=CAU"></button></p>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>    
+    <!-- box 1 end -->
+</body>
+<script>
+    $('li > a').on('click', function () {
+        $('li').removeClass();
+        $('li').addClass('nav-item');
+        $(this).parent().addClass('nav-item active');
+    });
+</script>
+</html>

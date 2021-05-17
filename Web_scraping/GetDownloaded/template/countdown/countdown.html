@@ -1,0 +1,381 @@
+<html lang="en"><head>
+<!-- ###########
+Change line 149
+########### -->
+
+
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<title>GetDOWNLOADED</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="D:\Sahil\GetDOWNLOADED_1\GetDOWNLOADED\static\navbar.css">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&family=Comfortaa&family=Exo+2&family=Ubuntu&display=swap&family=Lora:wght@500&family=Orbitron&display=swap" rel="stylesheet">
+<style>
+nav{z-index: 1;width:100%;}
+.footer{bottom:0;position: fixed;z-index: 1;}
+.gap{opacity: 0;}
+#check:checked ~ .button span:nth-child(1){
+   	width: 100%;
+   	transform: rotate(45deg) translateY(6px) translateX(7px);
+	}
+#check:checked ~ .button span:nth-child(3){
+   	width: 0;
+	}
+#check:checked ~ .button span:nth-child(5){
+   	width: 100%;
+   	transform: rotate(-45deg) translateY(-5px) translateX(7px);
+	}	
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+}
+body {
+  background-color: #010615;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#canvas-number {
+  width: 680px;
+  height: 420px;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+
+
+<nav class="navbar navbar-expand-lg col-12 col-sm-12">
+        <a class="navbar-brand col-lg-3 col-8" href='{% url "index" %}'>GetDOWNLOADED</a>
+        <div class="navbar-toggler col-2">
+            <input data-toggle="collapse" data-target="#navbarSupportedContent" type="checkbox" id="check">
+            <label for="check" class="button">
+                <span></span>
+                <span class="gap"></span>
+                <span></span>
+                <span class="gap"></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href='{% url "index" %}'>Recents<span class="sr-only"></span></a></li>
+                <li class="nav-item active"><a class="nav-link" href='{% url "bollywood" %}'>Bollywood<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href='{% url "hollywood" %}'>Hollywood<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href='{% url "pcgames" %}'>PC Games<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href='{% url "music" %}'>Music<span class="sr-only"></span></a></li>
+           </ul>
+        </div>
+        <form method="POST" action="/search/" class="form-inline my-2 justify-content-center my-lg-0 col-lg-3">
+            <!-- {% csrf_token %} -->
+            <input class="form-control col-sm-12" type="search" placeholder="Super Search" aria-label="Search" name="srh">
+        </form>
+    </nav>
+
+
+<canvas id="canvas-number" width="680" height="420"></canvas>
+<canvas id="canvas-dots" width="1536" height="722"></canvas>
+<footer class="footer">
+        <ul>
+            <h5>Contact Us: <a href="tel:7978678256"><img src="{% static 'call.png' %}"></a>
+                <a href="https://www.instagram.com/programmer_shuvam/?igshid=1p46e6pgpzylp"><img src="{% static 'insta.png' %}"></a>
+                <a href="mailto:thedevelopers512@gmail.com"><img src="{% static 'mail.png' %}"></a>
+            </h5>
+        </ul>
+</footer>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+<script id="rendered-js">
+/*
+Desc: Define inital variables
+*/
+var numberStage,
+numberStageCtx,
+numberStageWidth = 680,
+numberStageHeight = 420,
+numberOffsetX,
+numberOffsetY,
+
+stage,
+stageCtx,
+stageWidth = window.innerWidth,
+stageHeight = window.innerHeight,
+stageCenterX = stageWidth / 2,
+stageCenterY = stageHeight / 2,
+
+countdownFrom = 3,
+countdownTimer = 2800,
+countdownRunning = true,
+
+number,
+dots = [],
+numberPixelCoordinates,
+circleRadius = 2,
+colors = ['61, 207, 236', '255, 244, 174', '255, 211, 218', '151, 211, 226'];
+
+
+/*
+                                                                              Desc: Init canvases & Number text
+                                                                              */
+function init() {
+
+  // Init stage which will have numbers
+  numberStage = document.getElementById("canvas-number");
+  numberStageCtx = numberStage.getContext('2d');
+  // Set the canvas to width and height of the window
+  numberStage.width = numberStageWidth;
+  numberStage.height = numberStageHeight;
+
+  // Init Stage which will have dots
+  stage = document.getElementById("canvas-dots");
+  stageCtx = stage.getContext('2d');
+  stage.width = stageWidth;
+  stage.height = stageHeight;
+
+  // Create offset so text appears in middle of screen
+  numberOffsetX = (stageWidth - numberStageWidth) / 2;
+  numberOffsetY = (stageHeight - numberStageHeight) / 2;
+}
+
+init();
+
+
+/*
+        Desc: Dot object
+        */
+function Dot(x, y, color, alpha) {
+
+  var _this = this;
+
+  _this.x = x;
+  _this.y = y;
+  _this.color = color;
+  _this.alpha = alpha;
+
+  this.draw = function () {
+    stageCtx.beginPath();
+    stageCtx.arc(_this.x, _this.y, circleRadius, 0, 2 * Math.PI, false);
+    stageCtx.fillStyle = 'rgba(' + _this.color + ', ' + _this.alpha + ')';
+    stageCtx.fill();
+  };
+
+}
+
+/*
+  Desc: Create a certain amount of dots
+  */
+for (var i = 0; i < 2240; i++) {
+
+  // Create a dot
+  var dot = new Dot(randomNumber(0, stageWidth), randomNumber(0, stageHeight), colors[randomNumber(1, colors.length)], .1);
+
+  // Push to into an array of dots
+  dots.push(dot);
+
+  // Animate dots
+  tweenDots(dot, '', 'space');
+}
+
+
+/*
+  Desc: Countdown
+  */
+function countdown() {
+
+  // Send number to be drawn
+  drawNumber(countdownFrom.toString());
+
+  // When we hit zero stop countdown
+  if (countdownFrom === 0) {
+    countdownRunning = false;
+    // Now that countdowns finised show the text Go
+    drawNumber('GO');
+  }
+
+  // Decrement number down
+  countdownFrom--;
+}
+countdown();
+
+
+/*
+             Desc: Redraw loops
+             */
+function loop() {
+
+  stageCtx.clearRect(0, 0, stageWidth, stageHeight);
+
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].draw(stageCtx);
+  }
+
+  requestAnimationFrame(loop);
+}
+
+loop();
+
+
+/*
+        Desc: Draw number
+        */
+function drawNumber(num) {
+
+  // Create a number on a seperate canvas
+  // Use a seperate canvas thats smaller so we have less data to loop over when using getImagedata()
+
+  //	Clear stage of previous numbers
+  numberStageCtx.clearRect(0, 0, numberStageWidth, numberStageHeight);
+
+  numberStageCtx.fillStyle = "#010615";
+  numberStageCtx.textAlign = 'center';
+  numberStageCtx.font = "bold 418px Lato";
+  numberStageCtx.fillText(num, 340, 400);
+
+  var ctx = document.getElementById('canvas-number').getContext('2d');
+
+  // getImageData(x, y, width, height)
+  // note: is an exspenisve function, so make sure canvas is small as possible for what you grab
+  // Returns 1 Dimensional array of pixel color value chanels
+  // Red, blue, green, alpha chanel of single pixel
+  // First chanel is red
+  var imageData = ctx.getImageData(0, 0, numberStageWidth, numberStageHeight).data;
+
+  // Clear number coordinated
+  numberPixelCoordinates = [];
+
+  // i is equal to total image data(eg: 480,000)
+  // run while i is greater or equal to 0
+  // every time we run it minus 4 from i. Do this because each pixel has 4 chanels & we are only interested in individual pixels 
+  for (var i = imageData.length; i >= 0; i -= 4) {
+
+    // If not an empty pixel
+    if (imageData[i] !== 0) {
+
+      // i represents the position in the array a red pixel was found
+
+      // (i / 4 ) and percentage by width of canvas
+      // Need to divide i by 4 because it has 4 values and you need its orginal position
+      // Then you need to percentage it by the width(600) because each row contains 600 pixels and you need its relative position in that row
+      var x = i / 4 % numberStageWidth;
+
+      // (i divide by width) then divide by 4
+      // Divide by width(600) first so you get the rows of pixels that make up the canvas. Then divide by 4 to get its postion within the row
+      var y = Math.floor(Math.floor(i / numberStageWidth) / 4);
+
+      // If position exists and number is divisble by circle plus a pixel gap then add cordinates to array. So circles do not overlap
+      if (x && x % (circleRadius * 2 + 3) == 0 && y && y % (circleRadius * 2 + 3) == 0) {
+        // Push object to numberPixels array with x and y coordinates
+        numberPixelCoordinates.push({ x: x, y: y });
+
+      }
+
+    }
+  }
+
+  formNumber();
+
+}
+
+
+/*
+  Desc: Form number
+  */
+function formNumber() {
+
+  for (var i = 0; i < numberPixelCoordinates.length; i++) {
+
+    // Loop out as many coordionates as we need & pass dots in to animate
+    tweenDots(dots[i], numberPixelCoordinates[i], '');
+  }
+
+  // Break number apart
+  if (countdownRunning && countdownFrom > 0) {
+    setTimeout(function () {
+      breakNumber();
+    }, countdownTimer);
+  }
+}
+
+function breakNumber() {
+
+  for (var i = 0; i < numberPixelCoordinates.length; i++) {
+    tweenDots(dots[i], '', 'space');
+  }
+
+  if (countdownRunning) {
+    // Build next number
+    setTimeout(function () {
+      countdown();
+    }, countdownTimer);
+  }
+
+}
+
+
+/*
+  Desc: Animate dots
+  */
+function tweenDots(dot, pos, type) {
+
+  // Move dots around canvas randomly
+  if (type === 'space') {
+
+    // Tween dot to coordinate to form number
+    TweenMax.to(dot, 3 + Math.round(Math.random() * 100) / 100, {
+      x: randomNumber(0, stageWidth),
+      y: randomNumber(0, stageHeight),
+      alpha: 0.3,
+      ease: Cubic.easeInOut,
+      onComplete: function () {
+        tweenDots(dot, '', 'space');
+      } });
+
+
+  } else {
+
+    // Tween dot to coordinate to form number
+    TweenMax.to(dot, 1.5 + Math.round(Math.random() * 100) / 100, {
+      x: pos.x + numberOffsetX,
+      y: pos.y + numberOffsetY,
+      delay: 0,
+      alpha: 1,
+      ease: Cubic.easeInOut,
+      onComplete: function () {
+      } });
+
+
+  }
+}
+
+
+/*
+  Desc: Get a random number
+  */
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+//# sourceURL=pen.js
+    </script>
+
+
+</body></html>

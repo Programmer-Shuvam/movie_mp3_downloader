@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>modern flip card</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="cards.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-lg-4">
+            <div class="card">
+                <label for="card1" aria-hidden="true" class="d-block w-100 h-100">
+                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg')">
+                            <div class="inner position-relative text-center">
+                            </div>
+                            <div class="caption text-center">
+
+                                <h3>IMAGINE DRAGONS</h3>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link   show" href="#bio" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album" role="tab" data-toggle="tab">Albums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs" role="tab" data-toggle="tab">Songs</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio">
+                                    <div class="bio">
+                                        <h3 id="bio_title">IMAGINE DRAGONS</h3>
+                                        <span id="bio_description">
+                                            Imagine Dragons is an alternative-rock band from Las Vegas, Nevada. Band members include frontman Dan Reynolds, bassist Ben McKee, guitarist Wayne Sermon, and drummer Daniel Platzman.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs">
+                                    <div class="songs">
+                                        <div class="row">
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush list-unstyled">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2018@2x.png'
+                                                                     width="80" height="90"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Thunder</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Origins - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2019@2x.png'
+                                                                     width="80"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Demons</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Smoke & Mirrors - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <img class="p-1" src='./images/Rectangle%2020.png'
+                                                                     width="80"/>
+                                                            </div>
+
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Night Visions</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="box">
+            <div class="col-12 col-lg-4">
+            <div class="card">
+                <label for="card2" aria-hidden="true" class="d-block w-100 h-100">
+                    <input type="checkbox" id="card2" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg')">
+                            <div class="inner position-relative text-center">
+                            </div>
+                            <div class="caption text-center">
+
+                                <h3>IMAGINE DRAGONS</h3>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link   show" href="#bio2" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album2" role="tab" data-toggle="tab">Albums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs2" role="tab" data-toggle="tab">Songs</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio2">
+                                    <div class="bio">
+                                        <h3 id="bio_title">IMAGINE DRAGONS</h3>
+                                        <span id="bio_description">
+                                            Imagine Dragons is an alternative-rock band from Las Vegas, Nevada. Band members include frontman Dan Reynolds, bassist Ben McKee, guitarist Wayne Sermon, and drummer Daniel Platzman.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album2">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs2">
+                                    <div class="songs">
+                                        <div class="">
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush list-unstyled">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2018@2x.png'
+                                                                     width="80" height="90"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Thunder</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Origins - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2019@2x.png'
+                                                                     width="80"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Demons</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Smoke & Mirrors - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <img class="p-1" src='./images/Rectangle%2020.png'
+                                                                     width="80"/>
+                                                            </div>
+
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Night Visions</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        </div>
+        <!-- <div class="col-12 col-lg-4">
+            <div class="card">
+                <label for="card3" aria-hidden="true" class="d-block w-100 h-100">
+                    <input type="checkbox" id="card3" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg')">
+                            <div class="inner position-relative text-center">
+                            </div>
+                            <div class="caption text-center">
+
+                                <h3>IMAGINE DRAGONS</h3>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link   show" href="#bio3" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album3" role="tab" data-toggle="tab">Albums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs3" role="tab" data-toggle="tab">Songs</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio3">
+                                    <div class="bio">
+                                        <h3 id="bio_title">IMAGINE DRAGONS</h3>
+                                        <span id="bio_description">
+                                            Imagine Dragons is an alternative-rock band from Las Vegas, Nevada. Band members include frontman Dan Reynolds, bassist Ben McKee, guitarist Wayne Sermon, and drummer Daniel Platzman.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album3">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs3">
+                                    <div class="songs">
+                                        <div class="">
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush list-unstyled">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2018@2x.png'
+                                                                     width="80" height="90"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Thunder</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Origins - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2019@2x.png'
+                                                                     width="80"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Demons</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Smoke & Mirrors - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <img class="p-1" src='./images/Rectangle%2020.png'
+                                                                     width="80"/>
+                                                            </div>
+
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Night Visions</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div> -->
+
+
+<div class="col-12 col-lg-4">
+            <div class="boxs">
+          
+        
+        <!-- <div class=""> -->
+            <div class="card">
+                <label for="card3"  class="d-block w-100 h-100">
+                    <input type="checkbox" id="card3" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('https://wallpapercave.com/wp/wp3891762.jpg')" width='180'>
+                            <!-- <div class="inner position-relative text-center">
+                            </div> -->
+                            <div class="caption text-center">
+
+                                <h4>Avengers : Endgame</h3>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link   show" href="#bio3" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album3" role="tab" data-toggle="tab">Albums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs3" role="tab" data-toggle="tab">Songs</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio3">
+                                    <div class="bio">
+                                        <h3 id="bio_title">IMAGINE DRAGONS</h3>
+                                        <span id="bio_description">
+                                            Imagine Dragons is an alternative-rock band from Las Vegas, Nevada. Band members include frontman Dan Reynolds, bassist Ben McKee, guitarist Wayne Sermon, and drummer Daniel Platzman.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album3">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs3">
+                                    <div class="songs">
+                                        <div class="">
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush list-unstyled">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2018@2x.png'
+                                                                     width="80" height="90"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Thunder</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Origins - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2019@2x.png'
+                                                                     width="80"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Demons</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Smoke & Mirrors - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <img class="p-1" src='./images/Rectangle%2020.png'
+                                                                     width="80"/>
+                                                            </div>
+
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Night Visions</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="glaserss"></div> -->
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+            <div class="boxs">
+          
+        
+        <!-- <div class=""> -->
+            <div class="card">
+                <label for="card4"  class="d-block w-100 h-100">
+                    <input type="checkbox" id="card4" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('https://wallpapercave.com/wp/wp3891762.jpg')" width='180'>
+                            <!-- <div class="inner position-relative text-center">
+                            </div> -->
+                            <div class="caption text-center">
+
+                                <h4>Avengers : Endgame</h3>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link   show" href="#bio3" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album3" role="tab" data-toggle="tab">Albums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs3" role="tab" data-toggle="tab">Songs</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio3">
+                                    <div class="bio">
+                                        <h3 id="bio_title">IMAGINE DRAGONS</h3>
+                                        <span id="bio_description">
+                                            Imagine Dragons is an alternative-rock band from Las Vegas, Nevada. Band members include frontman Dan Reynolds, bassist Ben McKee, guitarist Wayne Sermon, and drummer Daniel Platzman.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album3">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <img class="" src='./images/Ellipse%201.png' width="80"/>
+                                                </div>
+                                                <div>
+                                                    <span class="" id="albums_title">Albums</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs3">
+                                    <div class="songs">
+                                        <div class="">
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush list-unstyled">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2018@2x.png'
+                                                                     width="80" height="90"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Thunder</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Origins - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4 ">
+                                                                <img class="p-1" src='./images/Rectangle%2019@2x.png'
+                                                                     width="80"/>
+                                                            </div>
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Demons</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Smoke & Mirrors - Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <img class="p-1" src='./images/Rectangle%2020.png'
+                                                                     width="80"/>
+                                                            </div>
+
+                                                            <div class="col-8 text-left">
+                                                                <div class="d-flex">
+                                                                    <span > Night Visions</span>
+                                                                    <small class="ml-auto">4:05 min</small>
+                                                                </div>
+                                                                <small>Imagine Dragons</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="glaserss"></div> -->
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+</body>
+<script>
+    $(' a').on('click', function () {
+        $('li').removeClass();
+        $('li').addClass('nav-item');
+        $(this).parent().addClass('nav-item active');
+    });
+</script>
+</html>

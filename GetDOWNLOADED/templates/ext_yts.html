@@ -1,0 +1,89 @@
+{% for movie in icons %}
+    <div class="col-12 col-lg-4 col-xl-3 col-md-6">    
+        <div class="boxs">        
+            <div class="card">
+                <label for="card{{forloop.counter}}"  class="d-block w-100 h-100">
+                    <input type="checkbox" id="card{{forloop.counter}}" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('{{movie.cover}}')" width='180'>
+                            <div class="caption text-center"><h5>{{movie.name}}</h5></div>
+                            
+                        </div>
+
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item activ">
+                                    <a class="nav-link   show" href="#bio{{forloop.counter}}" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album{{forloop.counter}}" role="tab" data-toggle="tab">Screenshot</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs{{forloop.counter}}" role="tab" data-toggle="tab">Download</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio{{forloop.counter}}">
+                                    <div class="bio">
+                                        <h2 id="bio_title">{{movie.name}}</h2>
+                                        <p id="bio_description">
+                                            <img style="padding-right:8px;" height="45px" src="https://img.icons8.com/color/48/000000/imdb.png"/>
+                                            {{movie.imdb}}
+                                            <img style="padding-left:1px;height:25px;" src="https://img.icons8.com/fluent/48/000000/star.png"/>
+                                            <p id="bio_description">Duration :  {{movie.duration}}</p>
+                                            <p id="bio_description">{{movie.desc}}</p>
+                                    </p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album{{forloop.counter}}">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                        </div>
+                                            <div class="dispnun{{forloop.counter}} dispnun">{{movie.screenshot}}</div>
+                                            <style>
+                                                .dispnun,.dispnuns,.not{display: none;}
+                                            </style>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs{{forloop.counter}}">
+                                    <div class="songs">
+                                        <ol>
+                                        </ol>    
+                                            <div class="dispnuns{{forloop.counter}} dispnuns">{{movie.links}}</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div> 
+    {% endfor %}
+<script>
+    $('div[class="back"] > ul > li').on('click', function () {
+        $(this).parent().children().removeClass();
+        $(this).parent().children().addClass('nav-item');
+        $(this).addClass('activ');
+    });
+    
+</script>
+<script>
+var z= parseInt($(".not").html())
+for (i = 1; i < z+1; i++) {
+    var x = $(".dispnun"+i.toString()).html()
+    var obj1 = jQuery.parseJSON(x);
+    for (src in obj1) {
+        var apd = '<div><a href="'+obj1[src]+'"><img width="30px"src="https://img.icons8.com/dusk/2x/zoom-to-extents.png" alt=""></a><img width="100%" src="'+obj1[src]+'" alt=""></div>'
+        $('#album'+i.toString()+' .row').append(apd);
+        }
+    var y = $(".dispnuns"+i.toString()).html()
+    var obj2 = jQuery.parseJSON(y);
+    for (data in obj2) {
+        var apds = '<li><label class="col-6 col-sm-6 justify-content-center">'+data+'<br><small class="col-sm-12"><img alt="SD icon" src="https://img.icons8.com/officexs/2x/sd.png" ><span>'+obj2[data][1]+'</span></small></label><a class="col-1 col-sm-1 justify-content-center" href="'+obj2[data][0]+'" id="but"><img alt="Downloads icon" src="https://img.icons8.com/color/344/downloads.png" lazy="loaded"></a><a class="col-1 col-sm-1 justify-content-center" href="'+obj2[data][2]+'" id="but"><img src="https://img.icons8.com/color/48/000000/protect-from-magnetic-field.png"/></a></li>'
+        $("#songs"+i.toString()+" ol").append(apds);
+        }
+
+}
+</script> 

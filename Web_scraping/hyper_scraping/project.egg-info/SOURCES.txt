@@ -1,0 +1,15 @@
+setup.py
+hyper_scraping/__init__.py
+hyper_scraping/items.py
+hyper_scraping/middlewares.py
+hyper_scraping/pipelines.py
+hyper_scraping/settings.py
+hyper_scraping/spiders/__init__.py
+hyper_scraping/spiders/hcv.py
+hyper_scraping/spiders/pdfdive.py
+hyper_scraping/spiders/piratescrap.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

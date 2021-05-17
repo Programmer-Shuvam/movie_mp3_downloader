@@ -1,0 +1,3 @@
+[console_scripts]
+scrapyd-heroku = scrapyd_heroku.manage:main
+

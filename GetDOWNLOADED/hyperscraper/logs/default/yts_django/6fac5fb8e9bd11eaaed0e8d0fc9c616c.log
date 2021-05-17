@@ -1,0 +1,458 @@
+2020-08-29 11:34:07 [scrapy.utils.log] INFO: Scrapy 2.3.0 started (bot: hyperscraper)
+2020-08-29 11:34:07 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.18362-SP0
+2020-08-29 11:34:07 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-08-29 11:34:07 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'hyperscraper',
+ 'CONCURRENT_REQUESTS': 7,
+ 'LOG_FILE': 'logs\\default\\yts_django\\6fac5fb8e9bd11eaaed0e8d0fc9c616c.log',
+ 'NEWSPIDER_MODULE': 'hyperscraper.spiders',
+ 'SPIDER_MODULES': ['hyperscraper.spiders']}
+2020-08-29 11:34:07 [scrapy.extensions.telnet] INFO: Telnet Password: a5d61d06b20a279c
+2020-08-29 11:34:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-08-29 11:34:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2020-08-29 11:34:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-08-29 11:34:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2020-08-29 11:34:12 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-08-29 11:34:12 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2020-08-29 11:34:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-08-29 11:34:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-08-29 11:34:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['hyperscraper.pipelines.HyperscraperPipeline']
+2020-08-29 11:34:12 [scrapy.core.engine] INFO: Spider opened
+2020-08-29 11:34:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-08-29 11:34:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-08-29 11:34:12 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+2020-08-29 11:34:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all> (referer: None)
+2020-08-29 11:34:14 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+2020-08-29 11:34:14 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+2020-08-29 11:34:14 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+2020-08-29 11:34:14 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+2020-08-29 11:34:14 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36
+2020-08-29 11:34:14 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+2020-08-29 11:34:14 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+2020-08-29 11:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/spider-man-far-from-home-2019> (referer: https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all)
+2020-08-29 11:34:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/spider-man-far-from-home-2019>
+{'cover': 'https://img.yts.mx/assets/images/movies/spider_man_far_from_home_2019/medium-cover.jpg',
+ 'desc': ' Our friendly neighborhood Super Hero decides to join his best '
+         'friends Ned, MJ, and the rest of the gang on a European vacation. '
+         "However, Peter's plan to leave super heroics behind for a few weeks "
+         'are quickly scrapped when he begrudgingly agrees to help Nick Fury '
+         'uncover the mystery of several elemental creature attacks, creating '
+         'havoc across the continent. ',
+ 'duration': ' 2 hr 9 min ',
+ 'imdb': 7.5,
+ 'links': '{\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/F83269473864732884FBC77182408DC0EC9A5E08",\n'
+          '        " 1.13 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:F83269473864732884FBC77182408DC0EC9A5E08&dn=Spider-Man%3A+Far+from+Home+%282019%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/510AADAA88CA9473470CA31C7696977C5BE57DEF",\n'
+          '        " 2.03 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:510AADAA88CA9473470CA31C7696977C5BE57DEF&dn=Spider-Man%3A+Far+from+Home+%282019%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "2160p.BluRay*": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/10E0F045C57542ED75C968DA08BFEF1C78A8235A",\n'
+          '        " 6.67 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:10E0F045C57542ED75C968DA08BFEF1C78A8235A&dn=Spider-Man%3A+Far+from+Home+%282019%29+%5B2160p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/2785C4334EF835B25EC1202299F768EF22F53102",\n'
+          '        " 1.12 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:2785C4334EF835B25EC1202299F768EF22F53102&dn=Spider-Man%3A+Far+from+Home+%282019%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/37E77490BC4F285DBFA837514715A20BD405A502",\n'
+          '        " 2.02 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:37E77490BC4F285DBFA837514715A20BD405A502&dn=Spider-Man%3A+Far+from+Home+%282019%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Spider-Man: Far from Home',
+ 'rel_date': datetime.date(2019, 3, 17),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_far_from_home_2019/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_far_from_home_2019/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_far_from_home_2019/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 11:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/the-amazing-spider-man-2012> (referer: https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all)
+2020-08-29 11:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/spider-man-2002> (referer: https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all)
+2020-08-29 11:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/the-amazing-spider-man-2012>
+{'cover': 'https://img.yts.mx/assets/images/movies/The_Amazing_SpiderMan_2012/medium-cover.jpg',
+ 'desc': ' Peter Parker (Garfield) is an outcast high schooler who was '
+         'abandoned by his parents as a boy, leaving him to be raised by his '
+         'Uncle Ben (Sheen) and Aunt May (Field). Like most teenagers, Peter '
+         'is trying to figure out who he is and how he got to be the person he '
+         'is today. Peter is also finding his way with his first high school '
+         'crush, Gwen Stacy (Stone), and together, they struggle with love, '
+         'commitment, and secrets. As Peter discovers a mysterious briefcase '
+         'that belonged to his father, he begins a quest to understand his '
+         "parents' disappearance - leading him directly to Oscorp and the lab "
+         "of Dr. Curt Connors (Ifans), his father's former partner. As "
+         "Spider-Man is set on a collision course with Connors' alter-ego, The "
+         'Lizard, Peter will make life-altering choices to use his powers and '
+         'shape his destiny to become a hero. ',
+ 'duration': ' 2 hr 16 min ',
+ 'imdb': 6.9,
+ 'links': '{\n'
+          '    "3D.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/E6E58CFABF864C6B40012F087CFBAC6FFA0E8813",\n'
+          '        " 2.10 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:E6E58CFABF864C6B40012F087CFBAC6FFA0E8813&dn=The+Amazing+Spider-Man+%282012%29+%5B3D%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/CA10982EF0698923A008B60F8CC28EAEF5E8881D",\n'
+          '        " 899.07 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:CA10982EF0698923A008B60F8CC28EAEF5E8881D&dn=The+Amazing+Spider-Man+%282012%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/7A3736A3B7DB99F57FC0A35FA8270059CDD3B741",\n'
+          '        " 2.00 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:7A3736A3B7DB99F57FC0A35FA8270059CDD3B741&dn=The+Amazing+Spider-Man+%282012%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'The Amazing Spider-Man',
+ 'rel_date': datetime.date(2012, 10, 25),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/The_Amazing_SpiderMan_2012/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/The_Amazing_SpiderMan_2012/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/The_Amazing_SpiderMan_2012/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 11:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/spider-man-2002>
+{'cover': 'https://img.yts.mx/assets/images/movies/Spider_Man_Trilogy_2002/medium-cover.jpg',
+ 'desc': " Based on Marvel Comics' superhero character, this is a story of "
+         'Peter Parker who is a nerdy high-schooler. He was orphaned as a '
+         "child, bullied by jocks, and can't confess his crush for his "
+         'stunning neighborhood girl Mary Jane Watson. To say his life is '
+         '"miserable" is an understatement. But one day while on an excursion '
+         'to a laboratory a runaway radioactive spider bites him... and his '
+         'life changes in a way no one could have imagined. Peter acquires a '
+         'muscle-bound physique, clear vision, ability to cling to surfaces '
+         'and crawl over walls, shooting webs from his wrist ... but the fun '
+         "isn't going to last. An eccentric millionaire Norman Osborn "
+         'administers a performance enhancing drug on himself and his maniacal '
+         'alter ego Green Goblin emerges. Now Peter Parker has to become '
+         'Spider-Man and take Green Goblin to the task... or else Goblin will '
+         'kill him. They come face to face and the war begins in which only '
+         'one of them will survive at the end. ',
+ 'duration': ' 2 hr 1 min ',
+ 'imdb': 7.3,
+ 'links': '{\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/0A452C5D40E282D216962B5423B600D1A103F8BA",\n'
+          '        " 699.15 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:0A452C5D40E282D216962B5423B600D1A103F8BA&dn=Spider-Man+%282002%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/B6ABEA6BAC7DEBB9BCF845983727FA6EDFCED29D",\n'
+          '        " 1.84 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:B6ABEA6BAC7DEBB9BCF845983727FA6EDFCED29D&dn=Spider-Man+%282002%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Spider-Man',
+ 'rel_date': datetime.date(2002, 9, 1),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_Trilogy_2002/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_Trilogy_2002/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_Trilogy_2002/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 11:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/spider-man-2-2004> (referer: https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all)
+2020-08-29 11:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/spider-man-3-2007> (referer: https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all)
+2020-08-29 11:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/spider-man-2-2004>
+{'cover': 'https://img.yts.mx/assets/images/movies/Spider_Man_2_2004/medium-cover.jpg',
+ 'desc': ' Peter Parker is an unhappy man: after two years of fighting crime '
+         'as Spider-Man, his life has begun to fall apart. The girl he loves '
+         'is engaged to someone else, his grades are slipping, he cannot keep '
+         'any of his jobs, and on top of it, the newspaper Daily Bugle is '
+         'attacking him viciously, claiming that Spider-Man is a criminal. He '
+         "reaches the breaking point and gives up the crime fighter's life, "
+         'once and for all. But after a failed fusion experiment, eccentric '
+         'and obsessive scientist Dr. Otto Octavius is transformed into super '
+         'villain Doctor Octopus, Doc Ock for short, having four long '
+         'tentacles as extra hands. Peter guesses it might just be time for '
+         'Spider-Man to return, but would he act upon it? ',
+ 'duration': ' 2 hr 7 min ',
+ 'imdb': 7.3,
+ 'links': '{\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/B2A7E3B3C25DABFEDD390F890B86B36F4C04A8D5",\n'
+          '        " 1.95 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:B2A7E3B3C25DABFEDD390F890B86B36F4C04A8D5&dn=Spider-Man+2+%282004%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Spider-Man 2',
+ 'rel_date': datetime.date(2004, 6, 26),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_2_2004/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_2_2004/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_2_2004/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 11:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/spider-man-3-2007>
+{'cover': 'https://img.yts.mx/assets/images/movies/Spider_Man_3_2007/medium-cover.jpg',
+ 'desc': ' Peter Parker has finally managed to piece together the once-broken '
+         'parts of his life, maintaining a balance between his relationship '
+         'with Mary-Jane and his responsibility as Spider-Man. But more '
+         "challenges arise for our young hero. Peter's old friend Harry "
+         'Obsourne has set out for revenge against Peter; taking up the mantle '
+         "of his late father's persona as The New Goblin, and Peter must also "
+         "capture Uncle Ben's real killer, Flint Marko, who has been "
+         'transformed into his toughest foe yet, the Sandman. All hope seems '
+         "lost when suddenly Peter's suit turns jet-black and greatly "
+         'amplifies his powers. But it also begins to greatly amplify the much '
+         "darker qualities of Peter's personality that he begins to lose "
+         'himself to. Peter has to reach deep inside himself to free the '
+         'compassionate hero he used to be if he is to ever conquer the '
+         'darkness within and face not only his greatest enemies, but '
+         'also...himself. ',
+ 'duration': ' 2 hr 19 min ',
+ 'imdb': 6.2,
+ 'links': '{\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/D2EF4ED704F999DBD5132ABE44D776300CF0301C",\n'
+          '        " 928.72 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:D2EF4ED704F999DBD5132ABE44D776300CF0301C&dn=Spider-Man+3+%282007%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/FE56BF80229C4D35A5E3DD4F12CA78945E91189E",\n'
+          '        " 2.05 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:FE56BF80229C4D35A5E3DD4F12CA78945E91189E&dn=Spider-Man+3+%282007%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Spider-Man 3',
+ 'rel_date': datetime.date(2007, 6, 26),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_3_2007/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_3_2007/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/Spider_Man_3_2007/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 11:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/spider-man-homecoming-2017> (referer: https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all)
+2020-08-29 11:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yts.mx/movies/spider-man-into-the-spider-verse-2018> (referer: https://yts.mx/browse-movies/spiderman/all/all/0/latest/0/all)
+2020-08-29 11:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/spider-man-homecoming-2017>
+{'cover': 'https://img.yts.mx/assets/images/movies/spider_man_homecoming_2017/medium-cover.jpg',
+ 'desc': ' Thrilled by his experience with the Avengers, Peter returns home, '
+         'where he lives with his Aunt May, under the watchful eye of his new '
+         'mentor Tony Stark, Peter tries to fall back into his normal daily '
+         'routine - distracted by thoughts of proving himself to be more than '
+         'just your friendly neighborhood Spider-Man - but when the Vulture '
+         'emerges as a new villain, everything that Peter holds most important '
+         'will be threatened. ',
+ 'duration': ' 2 hr 13 min ',
+ 'imdb': 7.4,
+ 'links': '{\n'
+          '    "3D.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/E7512ED30572C1F64CA94A62D72163D8549775EC",\n'
+          '        " 2.04 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:E7512ED30572C1F64CA94A62D72163D8549775EC&dn=Spider-Man%3A+Homecoming+%282017%29+%5B3D%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/D64DB6C8AEAE8D2AC53E88B83DE8C54FEDC45317",\n'
+          '        " 985.23 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:D64DB6C8AEAE8D2AC53E88B83DE8C54FEDC45317&dn=Spider-Man%3A+Homecoming+%282017%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/4415109A20908D55CD42EAF24DF9AAF89F7B0F7B",\n'
+          '        " 2.03 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:4415109A20908D55CD42EAF24DF9AAF89F7B0F7B&dn=Spider-Man%3A+Homecoming+%282017%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "2160p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/9C692F0B305FCE04660E97054AE5758D8E8F3805",\n'
+          '        " 6.36 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:9C692F0B305FCE04660E97054AE5758D8E8F3805&dn=Spider-Man%3A+Homecoming+%282017%29+%5B2160p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Spider-Man: Homecoming',
+ 'rel_date': datetime.date(2017, 3, 2),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_homecoming_2017/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_homecoming_2017/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_homecoming_2017/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 11:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yts.mx/movies/spider-man-into-the-spider-verse-2018>
+{'cover': 'https://img.yts.mx/assets/images/movies/spider_man_into_the_spider_verse_2018/medium-cover.jpg',
+ 'desc': ' Miles Morales is a New York teen struggling with school, friends '
+         'and, on top of that, being the new Spider-Man. When he comes across '
+         'Peter Parker, the erstwhile saviour of New York, in the multiverse, '
+         'Miles must train to become the new protector of his city. ',
+ 'duration': ' 1 hr 57 min ',
+ 'imdb': 8.4,
+ 'links': '{\n'
+          '    "3D.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/D5D7DC9374B6E2F7C26B024A85DD180F7EC3E131",\n'
+          '        " 1.87 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:D5D7DC9374B6E2F7C26B024A85DD180F7EC3E131&dn=Spider-Man%3A+Into+the+Spider-Verse+%282018%29+%5B3D%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/44C2FAC39605DB697C045D0EB664C9E4B7D1F95B",\n'
+          '        " 1003.51 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:44C2FAC39605DB697C045D0EB664C9E4B7D1F95B&dn=Spider-Man%3A+Into+the+Spider-Verse+%282018%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.BluRay": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/EADF812FFF1D9F1200AA87AB93DAEE6B40F96C33",\n'
+          '        " 1.88 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:EADF812FFF1D9F1200AA87AB93DAEE6B40F96C33&dn=Spider-Man%3A+Into+the+Spider-Verse+%282018%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "720p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/E70B6A744044DD0CAAA33335F4B620DBC47018CB",\n'
+          '        " 995.38 MB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:E70B6A744044DD0CAAA33335F4B620DBC47018CB&dn=Spider-Man%3A+Into+the+Spider-Verse+%282018%29+%5B720p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ],\n'
+          '    "1080p.WEB": [\n'
+          '        '
+          '"https://yts.mx/torrent/download/A753EA13F243EF9C4006D103DCBDBC7CABAD8A01",\n'
+          '        " 1.87 GB ",\n'
+          '        '
+          '"magnet:?xt=urn:btih:A753EA13F243EF9C4006D103DCBDBC7CABAD8A01&dn=Spider-Man%3A+Into+the+Spider-Verse+%282018%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"\n'
+          '    ]\n'
+          '}',
+ 'name': 'Spider-Man: Into the Spider-Verse',
+ 'rel_date': datetime.date(2018, 3, 17),
+ 'screenshot': '{\n'
+               '    "src_1": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_into_the_spider_verse_2018/large-screenshot1.jpg",\n'
+               '    "src_2": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_into_the_spider_verse_2018/large-screenshot2.jpg",\n'
+               '    "src_3": '
+               '"https://img.yts.mx/assets/images/movies/spider_man_into_the_spider_verse_2018/large-screenshot3.jpg"\n'
+               '}'}
+2020-08-29 11:34:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-08-29 11:34:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3719,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 88655,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 8,
+ 'elapsed_time_seconds': 6.635977,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 29, 6, 4, 18, 934418),
+ 'item_scraped_count': 7,
+ 'log_count/DEBUG': 23,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 45,
+ 'request_depth_max': 1,
+ 'response_received_count': 8,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2020, 8, 29, 6, 4, 12, 298441)}
+2020-08-29 11:34:18 [scrapy.core.engine] INFO: Spider closed (finished)

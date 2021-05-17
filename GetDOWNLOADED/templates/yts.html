@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetDOWNLOADED</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="D:\Sahil\GetDOWNLOADED_1\GetDOWNLOADED\static\navbar.css">
+    <link rel="stylesheet" type="text/css" href="D:\Sahil\GetDOWNLOADED_1\GetDOWNLOADED\static\cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&family=Comfortaa&family=Exo+2&family=Ubuntu&display=swap&family=Lora:wght@500&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- box 2 -->
+    <div class="col-12 col-lg-4 col-xl-3 col-md-6">    
+        <div class="boxs">        
+            <div class="card">
+                <label for="card2"  class="d-block w-100 h-100">
+                    <input type="checkbox" id="card2" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('{{movie.cover}}')" width='180'>
+                            <div class="caption text-center"><h5>{{movie.name}}</h5></div>
+                            
+                        </div>
+
+                        <div class="back">
+                            <ul class="nav justify-content-center nav-justified" role="tablist">
+                                <li class="nav-item activ">
+                                    <a class="nav-link   show" href="#bio2" role="tab" data-toggle="tab">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#album2" role="tab" data-toggle="tab">Screenshot</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#songs2" role="tab" data-toggle="tab">Download</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div role="tabpanel" class="tab-pane fade show active" id="bio{{forloop.counter}}">
+                                    <div class="bio">
+                                        <h2 id="bio_title">{{movie.name}}</h2>
+                                        <p id="bio_description">{{movie.desc}}</p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="album{{forloop.counter}}">
+                                    <div class="bio inline">
+                                        <div class="row text-center">
+                                        </div>
+                                            <div class="dispnun{{forloop.counter}} dispnun">{{movie.screenshot}}</div>
+                                            <style>
+                                                .dispnun,.dispnuns,.not{display: none;}
+                                            </style>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="songs2">
+                                    <div class="songs">
+                                        <ol>
+                                        </ol>    
+                                            <div class="dispnuns{{forloop.counter}} dispnuns">{{movie.links}}</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div> 
+    <!-- box 2 end    -->
+    <footer>
+        <ul>
+            <h5>Contact Us: <a href="tel:7978678256">7978678256</a>
+                <a href="https://www.instagram.com/programmer_shuvam/?igshid=1p46e6pgpzylp"><img src="D:\Sahil\GetDOWNLOADED_1\GetDOWNLOADED\static\insta.png" alt="insta.png">
+                </a>
+            </h5>
+        </ul>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+    $('div[class="back"] > ul > li').on('click', function () {
+        $(this).parent().children().removeClass();
+        $(this).parent().children().addClass('nav-item');
+        $(this).addClass('activ');
+    });
+    
+</script>
+</html>
